@@ -7,10 +7,10 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.corderoindustries.myapplication.R;
 
 
-
-public class MainActivity extends AppCompatActivity Cordero {
+public class MainActivity extends AppCompatActivity {
     TextView app_name;
     TextView title1;
     TextView title2;
