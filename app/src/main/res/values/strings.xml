@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="app_name">
+        Cordero App</string>
+    <string
+        name="ask_for_wage1"
+        >¿Cuánto ganas?</string>
+    <string
+        name="ask_for_wage2"
+        >Ganas?</string>
+    <string
+        name="wage_inputbox_text"
+        >Ingresa tu sueldo</string>
+    <string
+        name="add_item_text"
+        >Agregar</string>
+    <string
+        name="inputWage"
+        >Dice el cordero que 0j0m</string>
+</resources>
