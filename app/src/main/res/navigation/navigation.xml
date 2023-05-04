@@ -11,7 +11,8 @@
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <activity
-        android:id="@+id/getNextPayment"
-        android:name="com.corderoindustries.corderoapp.GetNextPayment"
-        android:label="GetNextPayment" />
+        android:id="@+id/ask_for_next_payment_date"
+        android:name="com.corderoindustries.corderoapp.ask_for_next_payment_date"
+        android:label="activity_ask_for_next_payment_date"
+        tools:layout="@layout/activity_ask_for_next_payment_date" />
 </navigation>

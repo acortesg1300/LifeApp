@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string
-        name="app_name">
+    <string name="app_name">
         Cordero App</string>
-    <string
-        name="ask_for_wage1"
-        >¿Cuánto ganas?</string>
-    <string
-        name="ask_for_wage2"
-        >Ganas?</string>
-    <string
-        name="wage_inputbox_text"
-        >Ingresa tu sueldo</string>
-    <string
-        name="add_item_text"
-        >Agregar</string>
-    <string
-        name="next"
-        >next</string>
+    <string name="ask_for_wage1">¿Cuánto ganas?</string>
+    <string name="ask_for_wage2">Ganas?</string>
+    <string name="wage_inputbox_text">Ingresa tu sueldo</string>
+    <string name="add_item_text">Agregar</string>
+    <string name="next">next</string>
+    <string name="ganas">Ganas?</string>
+    <string name="frecuencia">Frecuencia</string>
+    <string name="selecciona_la_divisa">Selecciona la divisa</string>
+    <string name="cu_nto">Cuánto</string>
 
 </resources>

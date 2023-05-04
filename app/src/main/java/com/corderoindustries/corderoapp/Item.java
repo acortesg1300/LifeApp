@@ -16,7 +16,8 @@ public class Item extends Cordero  { // Declaro la clase Item, que es tiene nume
     private int priority;
     @ColumnInfo
     private int interval;
-    ;
+    @ColumnInfo
+    private String lastRefilled;
 
 
     public Item(String name, float cost, int priority, int interval){ // declaro la funcion additem, que es una funcion de la clase (funcion) AppCordero, que es la principal.
@@ -24,6 +25,7 @@ public class Item extends Cordero  { // Declaro la clase Item, que es tiene nume
         this.cost=cost;
         this.priority=priority;
         this.interval=interval;
+        this.lastRefilled=String.valueOf(java.time.LocalDate.now());
     }
 
 
