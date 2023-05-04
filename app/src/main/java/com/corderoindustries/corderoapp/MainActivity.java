@@ -19,14 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        next_fragment_button = (Button)findViewById(R.id.next_fragment_button);
-        next_fragment_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,GetNextPayment.class);
-                startActivity(i);
-
-            }
-        });
+        };
     }
-}
+

@@ -16,6 +16,7 @@
         name="add_item_text"
         >Agregar</string>
     <string
-        name="inputWage"
-        >Dice el cordero que 0j0m</string>
+        name="next"
+        >next</string>
+
 </resources>
