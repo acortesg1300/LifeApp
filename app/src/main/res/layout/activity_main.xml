@@ -8,6 +8,12 @@
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fullscreen_fragment_container_view"
+        android:name="com.corderoindustries.corderoapp.get_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.fragment.app.FragmentContainerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/next_fragment_button"
@@ -21,79 +27,79 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/done" />
 
-    <TextView
-        android:id="@+id/app_display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_light"
-        android:text="@string/app_name"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+<!--    <TextView-->
+<!--        android:id="@+id/app_display"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/roboto_light"-->
+<!--        android:text="@string/app_name"-->
+<!--        android:textSize="35sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.265"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.086" />-->
 
-    <TextView
-        android:id="@+id/title1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/cu_nto"
-        android:textSize="45sp"
-        app:layout_constraintStart_toStartOf="@+id/app_display"
-        app:layout_constraintTop_toBottomOf="@+id/app_display" />
+<!--    <TextView-->
+<!--        android:id="@+id/title1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:text="@string/cu_nto"-->
+<!--        android:textSize="45sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/app_display"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/app_display" />-->
 
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/ganas"
-        android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="@+id/title1"
-        app:layout_constraintTop_toBottomOf="@+id/title1" />
+<!--    <TextView-->
+<!--        android:id="@+id/title2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:text="@string/ganas"-->
+<!--        android:textSize="60sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/title1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title1" />-->
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/frecuencia"
-        app:layout_constraintBottom_toBottomOf="@+id/inputWage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inputWage" />
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/frecuencia"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/inputWage"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/inputWage" />-->
 
-    <EditText
-        android:id="@+id/inputWage"
-        android:layout_width="200dp"
-        android:layout_height="49dp"
-        android:autofillHints="salary"
-        android:ems="10"
-        android:hint="@string/wage_inputbox_text"
-        android:inputType="numberDecimal"
-        android:textColorHint="#8D6E63"
-        app:layout_constraintBottom_toBottomOf="@+id/chip"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/chip" />
+<!--    <EditText-->
+<!--        android:id="@+id/inputWage"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:autofillHints="salary"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/wage_inputbox_text"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:textColorHint="#8D6E63"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/chip"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/chip" />-->
 
-    <com.google.android.material.chip.Chip
-        android:contentDescription="@string/selecciona_la_divisa"
-        android:id="@+id/chip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="288dp"
-        app:layout_constraintEnd_toStartOf="@+id/inputWage"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title2" />
+<!--    <com.google.android.material.chip.Chip-->
+<!--        android:contentDescription="@string/selecciona_la_divisa"-->
+<!--        android:id="@+id/chip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="288dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/inputWage"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintHorizontal_chainStyle="spread"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title2" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,9 +18,11 @@ public class Item extends Cordero  { // Declaro la clase Item, que es tiene nume
     private int interval;
     @ColumnInfo
     private String lastRefilled;
+    @ColumnInfo
+    private String addedDate;
 
 
-    public Item(String name, float cost, int priority, int interval){ // declaro la funcion additem, que es una funcion de la clase (funcion) AppCordero, que es la principal.
+    public Item(String name, float cost, int priority, int interval, String lastRefilled, String addedDate){ // declaro la funcion additem, que es una funcion de la clase (funcion) AppCordero, que es la principal.
         this.name=name;
         this.cost=cost;
         this.priority=priority;

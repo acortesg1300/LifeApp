@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">
         Cordero App</string>
-    <string name="ask_for_wage1">¿Cuánto ganas?</string>
+    <string name="ask_for_wage1">¿Cuanto ganas?</string>
     <string name="ask_for_wage2">Ganas?</string>
     <string name="wage_inputbox_text">Ingresa tu sueldo</string>
     <string name="add_item_text">Agregar</string>
@@ -10,6 +10,8 @@
     <string name="ganas">Ganas?</string>
     <string name="frecuencia">Frecuencia</string>
     <string name="selecciona_la_divisa">Selecciona la divisa</string>
-    <string name="cu_nto">Cuánto</string>
-
+    <string name="cu_nto">Cuanto</string>
+    <string name="ask_for_birthdate">¿Cuál es tu fecha de nacimiento?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
