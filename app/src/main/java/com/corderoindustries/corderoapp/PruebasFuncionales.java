@@ -8,52 +8,95 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link PruebasFuncionales#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class PruebasFuncionales extends Fragment {
+///**
+// * A simple {@link Fragment} subclass.
+// * Use the {@link PruebasFuncionales#newInstance} factory method to
+// * create an instance of this fragment.
+// */
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
+    public class PruebasFuncionales extends Fragment{
     public PruebasFuncionales() {
         // Required empty public constructor
     }
+        public static void main(String[] args) {
+            class Item{
+                private int masterCount;
+                private String name = "defaultName";
+                private int cost = 10;
+                private int priority = 1;
+                private int interval = 7;
+                private String lastRefill = "defaultRefillDate";
+                private String addedDate; // 2023-05-06 ; formato AAA-MM-DD
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PruebasFuncionales.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PruebasFuncionales newInstance(String param1, String param2) {
-        PruebasFuncionales fragment = new PruebasFuncionales();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+                public void newItem(String name, int cost, int priority, int interval, String lastRefill) {
+                    if (this.lastRefill == "null"){
+                        this.setLastRefill(String.valueOf(java.time.LocalDate.now()));
+                    } else {this.lastRefill = lastRefill;
+                    }
+                    this.name = name;
+                    this.cost = cost;
+                    this.priority = priority;
+                    this.interval = interval;
+                    this.addedDate = String.valueOf(java.time.LocalDate.now());
+                    masterCount++;
+                }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+                public void announceItem(){
+                    System.out.println("Pagas " + this.cost + " de " + this.name + " cada " + this.interval + " días; Es tu prioridad número " + this.priority +" y la última vez que lo pagaste fue el " + this.lastRefill);
+                }
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public float getCost() {
+                    return cost;
+                }
+
+                public void setCost(int cost) {
+                    this.cost = cost;
+                }
+
+                public int getPriority() {
+                    return priority;
+                }
+
+                public void setPriority(int priority) {
+                    this.priority = priority;
+                }
+
+                public int getInterval() {
+                    return interval;
+                }
+
+                public void setInterval(int interval) {
+                    this.interval = interval;
+                }
+
+                public String getLastRefill() {
+                    return lastRefill;
+                }
+                public void setLastRefill(String lastRefill) {
+                    this.lastRefill = lastRefill;
+                }
+
+            }
+            Item renta = new Item();
+            renta.newItem("Renta",6500,1,30,"04-30-2023");
+            Item luz = new Item();
+            luz.newItem("Electricidad",1000,1,30,null);
+            renta.announceItem();
+            luz.announceItem();
+//            System.out.println("En este momento hay " + Item.masterCount + " artículos en la lista.");
+
         }
-    }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
