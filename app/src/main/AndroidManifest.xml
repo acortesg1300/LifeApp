@@ -13,8 +13,11 @@
         android:theme="@style/Theme.CorderoApp"
         tools:targetApi="31">
         <activity
-            android:name=".ask_for_next_payment_date"
-            android:exported="false" />
+            android:name=".get_birthdate"
+            android:exported="false"
+            android:label="@string/ask_for_birthdate"
+            android:theme="@style/Theme.CorderoApp" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -10,9 +10,40 @@
         android:name="com.corderoindustries.corderoapp.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
-    <activity
-        android:id="@+id/ask_for_next_payment_date"
-        android:name="com.corderoindustries.corderoapp.ask_for_next_payment_date"
-        android:label="activity_ask_for_next_payment_date"
-        tools:layout="@layout/activity_ask_for_next_payment_date" />
+    <fragment
+        android:id="@+id/get_birthdate"
+        android:name="com.corderoindustries.corderoapp.get_birthdate"
+        android:label="fragment_get_birthdate"
+        tools:layout="@layout/fragment_get_birthdate" >
+        <action
+            android:id="@+id/action_get_birthdate_to_get_wage"
+            app:destination="@id/get_wage" />
+    </fragment>
+    <action
+        android:id="@+id/action_goto_get_birthdate"
+        app:destination="@id/get_birthdate"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:popEnterAnim="@anim/nav_default_enter_anim" />
+    <fragment
+        android:id="@+id/get_wage"
+        android:name="com.corderoindustries.corderoapp.GetWage"
+        android:label="fragment_get_wage"
+        tools:layout="@layout/fragment_get_wage" >
+        <action
+            android:id="@+id/action_get_wage_to_pruebasFuncionales"
+            app:destination="@id/pruebasFuncionales" />
+    </fragment>
+    <fragment
+        android:id="@+id/pruebasFuncionales"
+        android:name="com.corderoindustries.corderoapp.PruebasFuncionales"
+        android:label="fragment_pruebas_funcionales"
+        tools:layout="@layout/fragment_pruebas_funcionales" />
+    <action
+        android:id="@+id/action_goto_pruebasFuncionales"
+        app:destination="@id/pruebasFuncionales" />
+    <action
+        android:id="@+id/action_goto_get_wage"
+        app:destination="@id/get_wage" />
+
+
 </navigation>

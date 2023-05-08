@@ -4,23 +4,24 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
 
 
 public class Item extends Cordero  { // Declaro la clase Item, que es tiene numero unico, nombre, costo prioridad e intervalo
-    @PrimaryKey
+
     private String name;
-    @ColumnInfo
+
     private float cost;
-    @ColumnInfo
+
     private int priority;
-    @ColumnInfo
+
     private int interval;
-    @ColumnInfo
+
     private String lastRefilled;
 
+    private String addedDate;
 
-    public Item(String name, float cost, int priority, int interval){ // declaro la funcion additem, que es una funcion de la clase (funcion) AppCordero, que es la principal.
+
+    public Item(String name, float cost, int priority, int interval, String lastRefilled, String addedDate){ // declaro la funcion additem, que es una funcion de la clase (funcion) AppCordero, que es la principal.
         this.name=name;
         this.cost=cost;
         this.priority=priority;
