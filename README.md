@@ -1,4 +1,4 @@
-# CorderoApp
+# LifeApp
 # Aplicación creada por un aprendiz de ambos Java y la vida para ayudar con la vida de adulto.
 # 
 # La divisa oficial para hacer operaciones son: 
